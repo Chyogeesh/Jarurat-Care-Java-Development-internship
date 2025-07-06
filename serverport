@@ -1,0 +1,10 @@
+server.port=8080
+spring.application.name=whatsapp-chatbot
+
+# Firebase configuration (replace with actual credentials)
+firebase.database.url=https://your-firebase-project.firebaseio.com
+firebase.service-account.path=service-account.json
+
+# Mock WhatsApp API endpoint (replace with actual Meta API URL)
+whatsapp.api.url=https://api.whatsapp.com/v1/messages
+whatsapp.api.token=your-api-token
