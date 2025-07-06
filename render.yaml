@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: whatsapp-chatbot
+    env: java
+    buildCommand: ./mvnw package
+    startCommand: java -jar target/whatsapp-chatbot-0.0.1-SNAPSHOT.jar
+    envVars:
+      - key: firebase.database.url
+        value: https://your-firebase-project.firebaseio.com
+      - key: whatsapp.api.url
+        value: https://api.whatsapp.com/v1/messages
+      - key: whatsapp.api.token
+        value: your-api-token
+    regions:
+      - oregon
